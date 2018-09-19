@@ -1,0 +1,29 @@
+{
+  "name": "robots",
+  "version": "1.0.0",
+  "description": "Website made for a project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Robots",
+    "technology",
+    "modern",
+    "city",
+    "intelligent"
+  ],
+  "author": "Piotr Michalski",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "deep-extend": "^0.5.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1"
+  }
+}
