@@ -1,12 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="description" content="Here is a precise description of my awesome webpage.">
+    <meta name=”robots” content=”index, follow”>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="www.example.pl">
+    <title>Autonomous & Robotized Life 2018</title>
 </head>
+
 <body>
-    
+
+    <header id="header" class="header" role="banner">
+        <div class="header-container">
+            <h1 class="header__title" rel="index">
+                <a href="" class="header__title__link" title="Strona główna">
+                    <img class="header__logo" src="images/logo.png" alt="">
+                </a>
+            </h1>
+            <nav class="header__nav" role="menu">
+                <ul id="main-menu" class="nav__list" itemprop="breadcrumb">
+                    <li class="nav--item">
+                        <a  href="#" class="nav--link" aria-label="Strona główna">Start</a>
+                    </li>
+                    <li class="nav--item">
+                        <a  href="#" class="nav--link" aria-label="Partnerzy">Partnerzy</a>
+                    </li>
+                    <li class="nav--item">
+                        <a  href="#" class="nav--link" aria-label="O nas">O nas</a>
+                    </li>
+                    <li class="nav--item">
+                        <a  href="#" class="nav--link" aria-label="Kontakt">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="content" role="main">
+        <section class="section section__intro" id="intro"></section>
+        <section class="section section__partners" id="partners"></section>
+        <section class="section section__about" id="about"></section>
+        <section class="section section__contact" id="contact"></section>
+    </main>
+
+    <footer class="footer" id="footer" role="contentinfo">
+        <div class="footer__container"></div>
+    </footer>
 </body>
+
 </html>
