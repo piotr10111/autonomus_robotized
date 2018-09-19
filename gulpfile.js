@@ -40,6 +40,6 @@ gulp.task('image', () =>
         .pipe(gulp.dest('dist/images'))
 );
 
-gulp.task('default', ['sass','js','html', 'image'])
+gulp.task('default', [ 'sass:watch','sass','js','html', 'image'])
 
 

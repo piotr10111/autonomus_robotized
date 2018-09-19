@@ -1,0 +1,22 @@
+.nav__list .nav--item{
+    display: inline-block;
+    position:relative;
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.nav__list .nav--item .nav--link{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    //text-transform: uppercase;
+    color: $text-color;
+    font-size: 18px;
+    font-weight: $base-font-weight;
+    margin: 0 10px;
+
+    &:hover {
+        color: #31CCCC;
+        transition: .2s;
+    }
+}
