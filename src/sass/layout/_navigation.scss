@@ -10,16 +10,16 @@
     padding: 10px 15px;
     text-decoration: none;
     text-transform: uppercase;
-    color: $text-color;
+    color: white;
     font-size: 16px;
-    font-weight: $base-font-weight;
+    font-weight: $bold;
     margin: 0 10px;
     transition: .6s;
     &:focus{
-        color: $logo-color;
+        color: $purple;
     }
     &:hover {
-        color: $logo-color;
+        color: $purple;
         transition: .6s;
     }
 }
