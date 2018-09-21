@@ -2,11 +2,11 @@
     position: fixed;
     top:0;
     width: 100%;
-    z-index: 10;
-    background-color: rgb(237, 237, 237);
+    z-index: 100;
+    background-color: #ffffff;
     -webkit-transition: .2 ease-in;
     transition: .2 ease-in;
-    border-bottom: 1px solid $text-color;
+    //border-bottom: 1px solid $text-color;
 }
 
 .header__nav {

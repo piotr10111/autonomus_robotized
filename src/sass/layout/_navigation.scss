@@ -9,14 +9,21 @@
     display: block;
     padding: 10px 15px;
     text-decoration: none;
-    //text-transform: uppercase;
+    text-transform: uppercase;
     color: $text-color;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: $base-font-weight;
     margin: 0 10px;
-
-    &:hover {
-        color: #31CCCC;
-        transition: .2s;
+    transition: .6s;
+    &:focus{
+        color: $logo-color;
     }
+    &:hover {
+        color: $logo-color;
+        transition: .6s;
+    }
+}
+
+.header__logo {
+    position: absolute;
 }
