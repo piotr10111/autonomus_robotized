@@ -34,7 +34,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('image', () =>
-    gulp.src('src/images/*')
+    gulp.src('src/images/**/*')
         .pipe(imagemin())
         .pipe(gulp.dest(dist+'/images'))
 );

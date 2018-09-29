@@ -30,7 +30,7 @@
     flex-direction: column;
 
     .about__title--bold{
-        color: #212529;
+        color: $dark-text-color;
         font-size: 42px;
         font-weight: $bold;
         //line-height: 70px;
@@ -39,7 +39,7 @@
     }
     p{
         font-size: 20px;
-        color: #889098;
+        color: $text-color;
         line-height: 32px;
         text-align: center;
     }
