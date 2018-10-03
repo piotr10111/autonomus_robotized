@@ -2,7 +2,7 @@
     display: inline-block;
     position:relative;
     z-index: 1;
-    margin-top: 15px;
+    margin-top: 35px;
 }
 
 .nav__list .nav--item .nav--link{
@@ -10,20 +10,21 @@
     padding: 10px 15px;
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
+    color: $dark-text-color;
     font-size: 16px;
     font-weight: $bold;
     margin: 0 10px;
     transition: .6s;
+    
     &:focus{
         color: $purple;
     }
     &:hover {
         color: $purple;
-        transition: .6s;
+        transition: .2s;       
     }
 }
 
 .header__logo {
-    position: absolute;
+    //position: absolute;
 }
