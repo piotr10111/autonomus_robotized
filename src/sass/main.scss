@@ -15,6 +15,9 @@
 @import 'pages/_intro';
 @import 'pages/_about';
 @import 'pages/_founders';
+@import 'pages/_sponsors';
+@import 'pages/_history';
+
 
 html{
     margin: 0;
@@ -26,7 +29,7 @@ html{
 }
 
 body {
-    height: 100vh;
+    //height: 100vh;
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -34,6 +37,9 @@ body {
     //background-color: #EEEEEE;
  }
 
+ article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
  .header__container, .section__container, .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -41,5 +47,8 @@ body {
     max-width: 1250px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 20px 0 20px;
+    //padding: 0 20px 0 20px;
+}
+.section__container {
+    padding: 230px 20px 150px 20px;
 }

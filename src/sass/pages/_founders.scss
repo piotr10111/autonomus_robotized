@@ -1,21 +1,30 @@
+.section__founders {
+    margin: 0;
+    padding: 0;
+    margin-top: -250px;
+}
 .founders__list {
-    margin-top: 1500px;
+    display: flex;
+    flex-direction: column;
+
 }
 .item--figure {
     display: flex;
-
+    //position: relative;
+    //top: 450px;
     .item__image img {
         -webkit-box-shadow: 0px 8px 23px 0px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 0px 8px 23px 0px rgba(0, 0, 0, 0.75);
         box-shadow: 0px 8px 23px 0px rgba(0, 0, 0, 0.75);
     }
 }
-.margin {
-    margin-left: 90px;
+.margin-founder {
+    margin-left: 180px;
 }
 .right{
     flex-direction: row-reverse;
 }
+
 .item__description--right{
     color: $dark-text-color;
 
