@@ -1,14 +1,37 @@
 .section__history {
     background-color: #F8F9FA;
-    //display: flex;
-    //justify-content: center;
+    display: flex;
+    justify-content: center;
     //margin: 0;
     //padding: 0;
+
+    p {
+        color: $text-color;
+        font-size: 20px;
+        margin-top: 70px;
+        line-height: 40px;
+        padding: 20px 100px 20px 100px;
+        text-align: justify;
+    }
 }
+
 .history__title--bold {
-        color: $dark-text-color;
+    color: $dark-text-color;
     font-size: 42px;
     font-weight: $bold;
-    //margin-top: -100px;
+    text-align: center;
+    margin-top: -100px;
 }
+.bold-span {
+    font-weight: bold;
+    color: $logo-color;
+}
+.history__figure {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+
 
