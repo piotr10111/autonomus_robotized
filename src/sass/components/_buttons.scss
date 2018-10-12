@@ -1,25 +1,86 @@
-.button2 {
-    
-    -webkit-transition: all 400ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    -moz-transition: all 400ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    -ms-transition: all 400ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    -o-transition: all 400ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    transition: all 400ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    display: block;
-    margin: 0px 10px 10px 10px;
-    //max-width: 180px;
-    text-decoration: none;
-    font-weight: $bold;
-    border-radius: 4px;
-    padding: 0px 5px;
-    color: $purple;
-    box-shadow:rgba(255, 255, 255, 0.85) 0 0px 0px 2px inset;
-    &:hover {
-        color: rgba(0, 0, 0, 0.85);
-    box-shadow: rgba(255, 255, 255, 0.85) 0 80px 0px 2px inset;
+// Header button
+.header__button {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 40px;
+    height: 31px;
+    border: 0;
+    border-top: 3px solid #000;
+    background: transparent;
+    margin-right: 20px;
+    z-index: 200;
+    font-size: 0;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 3px solid #000;
+        transform: translateY(10px);
     }
+
+    &:after{
+        transform: translateY(23px);
+    }
+  }
+
+  .header__button--close {
+      display: block;
+    z-index: 200;
+    width: 40px;
+    height: 25px;
+    border: 0;
+    background: transparent;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    margin-right: 17px;
+    padding: 0;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 3px solid #000;
+        -webkit-transform: rotate(45deg) translateY(5px);
+                transform: rotate(45deg) translateY(5px);
+    }
+
+    &::after {
+        -webkit-transform: rotate(-45deg) translateX(-5px);
+                transform: rotate(-45deg) translateX(-5px);
+    }
+
+  }
+  @media(max-width: 1000px) {
+    .header__button {
+        display: block;
+        
+    }
+
+  }
+// Dowiedz się więcej - intro
+.more__button {
+    display: block;
+    text-decoration: none;
+    color: white;
+    //padding: 10px ;
+    background-color: $purple;
+    font-weight: $bold;
+    border-radius: 5px;
+    max-width: 200px;
+    text-align: center;
 }
 
+// Arrow
 .arrow {
     z-index: 90;
     position: absolute;
@@ -28,6 +89,15 @@
 
    
   }
+  @media(max-width: 900px) {
+    .more__button {
+        font-size: 15px;
+        width: 180px;
+    }
+    .arrow {
+        top: 90%;
+    }
+}
   .bounce {
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
@@ -92,8 +162,8 @@
         
 .social-button{
     position: absolute;
-    bottom: 43px;
-    right: 41px;
+    top: 43px;
+    left: 41px;
     height: 50px;
     width: 50px;
     transform: scale(0.8);
@@ -101,8 +171,8 @@
     border-radius: 100%;
     box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.4);
     cursor: pointer;
-    z-index: 99;
-    backface-visibility: hidden;
+    z-index: 200;
+    //backface-visibility: hidden;
     &:hover{
         transform: scale(1);
         transition: 0.35s cubic-bezier(0.3, 0.2, 0, 2.5);
@@ -113,14 +183,8 @@
             bottom: 105px;
             right: 73px;
         }
-        }
-    &.pinterest-button{
-        background: url("https://cdn4.iconfinder.com/data/icons/social-icon-4/842/pinterest-256.png") no-repeat center;
-        &.active{
-            bottom: 67px;
-            right: 109px;
-        }
-        }
+    }
+  
     &.insta-button{
         background: url("https://cdn4.iconfinder.com/data/icons/social-icon-4/842/instagram-256.png") no-repeat center;
         &.active{

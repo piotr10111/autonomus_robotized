@@ -37,9 +37,9 @@ body {
     //background-color: #EEEEEE;
  }
 
- article, aside, footer, header, hgroup, main, nav, section {
+ /*article, aside, footer, header, hgroup, main, nav, section {
     display: block;
-}
+}*/
  .header__container, .section__container, .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -51,4 +51,8 @@ body {
 }
 .section__container {
     padding: 230px 20px 150px 20px;
+}
+
+.item__image img {
+    padding-right: 30px;
 }

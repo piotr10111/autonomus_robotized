@@ -24,12 +24,18 @@
 }
 .bold-span {
     font-weight: bold;
-    color: $logo-color;
+    color: $purple;
 }
 .history__figure {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+
+    .history__img {
+        -webkit-box-shadow: 0px 8px 23px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 8px 23px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 8px 23px 0px rgba(0, 0, 0, 0.75);
+    }
 }
 
 

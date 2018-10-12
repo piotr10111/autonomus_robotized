@@ -13,11 +13,12 @@
 
 .title__container{
     //margin-left: 100px;
-   
-    text-align: center;
+   color: #F8F9FA;
+    //text-align: center;
     margin-top: 200px;
     width: 600px;
     line-height: 65px;
+
 }
 .section__title{
     font-weight: $bold;
@@ -26,10 +27,26 @@
 .section__title--role{
     font-weight: $base-font-weight;
     font-size: 18px;
+    text-align: left;
+    line-height: 30px;
+    margin: 20px 0;
+    padding-right: 35px;
 }
-.title--line{
-    display: flex;
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 35px;
+@media(max-width: 548px) {
+    .section__intro {
+        height: 90vh;
+    }
 }
+@media(max-width: 900px) {
+    .section__title{
+        font-size: 65px;
+    }
+    .section__title--role {
+        font-size: 17px;
+        padding-right: 70px;
+    }
+    .section__intro {
+        //height: 95vh;
+    }
+}
+

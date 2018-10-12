@@ -25,6 +25,30 @@
     }
 }
 
+@media(max-width: 1000px) {
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .nav--item {
+        margin-top: 60px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .nav__list--block {
+        visibility: visible;
+        background-color: black;
+        margin: 0;
+        padding: 0 30px;
+        transition: .3s;
+    }
+}
 .header__logo {
-    //position: absolute;
+    padding-left: 20px;
 }
