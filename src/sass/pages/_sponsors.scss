@@ -1,17 +1,33 @@
 .section__partners {
     display: flex;
     justify-content: center;
-    justify-content: space-between;
+    //justify-content: space-between;
     margin-top: -200px;
 }
 
 .sponsors-list {
     display: flex;
+    padding: 30px;
+   // flex-wrap: wrap;
 }
 
 .margin {
-    margin-left: 180px;
+    margin-left: 130px;
 }
 .top{
     margin-top: 50px;
+}
+.sponsor-figure .sponsor-image {
+    height: auto;
+    width: 100%;
+}
+@media (max-width: 950px) {
+    .sponsors-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sponsor-image {
+        text-align: center;
+    }
 }

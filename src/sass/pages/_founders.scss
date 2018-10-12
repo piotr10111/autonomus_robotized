@@ -168,3 +168,66 @@
     padding-right: 0;
     
 }
+
+@media (max-width: 1050px) {
+
+    .founders__list {
+        text-align: center;
+    }
+    .item--figure {
+        display: flex;
+        flex-direction: column;
+    }
+    .item__image img {
+        text-align: center;
+        
+    }
+
+    .item__desc {
+        margin-left: 0;
+        margin-top: 50px;
+        //margin-top: 100px;
+
+        p {
+            padding: 0 40px;
+            text-align: center;
+        }
+    }
+
+    .reverse {
+       flex-direction: column;
+        margin-left: 0;
+    }
+}
+@media (max-width: 460px) {
+
+    .item__image img {
+        height: auto;
+        width: 100%;
+        margin-left: -10px;
+        
+    }
+
+    .item__desc {
+        p {
+            font-size: 16px;
+            color: $text-color;
+            line-height: 25px;
+            padding: 0 20px;
+          
+        }
+    }
+
+    .item__description-title {
+        font-size: 24px;
+            
+        .fa-lightbulb {
+            font-size: 40px;
+        }
+      
+        .fa-award {
+            font-size: 40px;
+        }
+    }
+    
+}
