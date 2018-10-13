@@ -14,7 +14,7 @@
     font-size: 16px;
     font-weight: $bold;
     margin: 0 10px;
-    transition: .6s;
+    //transition: .6s;
     
     &:focus{
         color: $purple;
@@ -27,6 +27,7 @@
 
 @media(max-width: 1000px) {
     .nav__list {
+        visibility: hidden;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -43,10 +44,13 @@
 
     .nav__list--block {
         visibility: visible;
-        background-color: black;
+        background-color: #F8F9FA;
         margin: 0;
         padding: 0 30px;
         transition: .3s;
+        -webkit-box-shadow: 3px 2px 16px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 2px 16px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 2px 16px 0px rgba(0,0,0,0.75);
     }
 }
 .header__logo {

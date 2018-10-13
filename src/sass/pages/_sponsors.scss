@@ -21,13 +21,39 @@
     height: auto;
     width: 100%;
 }
-@media (max-width: 950px) {
+@media (max-width: 400px) {
+    .section__partners {
+        margin-top: -500px;
+        padding-top: 0px;
+    }
+}
+@media (max-width: 1000px) {
+
+    .margin {
+        margin-left: 50px;
+    }
+
+}
+@media (max-width: 700px) {
+    .section__partners {
+        margin-top: -300px;
+        margin-bottom: -100px;
+    }
     .sponsors-list {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-left: -40px;
+    }
+    .margin {
+        margin-left: 50px;
+    }
+    .wide {
+        margin-left: 60px;
     }
     .sponsor-image {
+        transform: scale(.8);
         text-align: center;
+        margin-top: 50px;
     }
 }

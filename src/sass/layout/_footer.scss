@@ -1,13 +1,14 @@
 .footer {
     background-color: #F8F9FA;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     border-top: 2px solid #F2F2F2;
 }
 
 .footer__menu {
     display: flex;
-    padding: 80px 20px;
+    padding: 80px 0;
 
     .nav__footer-item {
         margin-left: 30px;
@@ -24,16 +25,18 @@
 .footer__menu-media {
     display: flex;
     justify-content: center;
-
+   // margin-left: 40px;
 
     .nav__media-item {
-        padding: 0 20px;
+        //padding: 0 20px;
     }
 
     .nav__social-item {
         font-size: 30px;
     }
-
+    .instagram {
+        padding-left: 20px;
+    }
     .fa-facebook-f {
         color: $text-color;
 
@@ -70,4 +73,29 @@
     color: $text-color;
     padding-top: 30px;
 }
+
+.footer__credit {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 13px;
+    color: $text-color;
+}
+
+.link__author {
+    text-decoration: none;
+    color: $logo-color;
+}
+
+@media (max-width: 600px) {
+    .footer__menu {
+        flex-direction: column;
+        text-align: center;
+        margin-left: -25px;
+    }
+    .nav__footer-item {
+        margin-top: 20px;
+    }
+}
+
+
 

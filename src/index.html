@@ -23,26 +23,27 @@
         <div class="header__container">
             <h1 class="header__title" rel="index">
                 <a href="" class="header__title__link" title="Strona główna">
-                    <img class="header__logo" src="../dist/images/damn.png" alt="">
+                    <img class="header__logo" src="../dist/images/noname.png" alt="">
                 </a>
             </h1>
-            <a class="header__button" aria-label="menu" aria-expanded="false" aria-controls="main-menu" tabindex="1" role="button" type="button" name="menu">Menu</a>
+            <a class="header__button" aria-label="menu" aria-expanded="false" aria-controls="main-menu" tabindex="1"
+                role="button" type="button" name="menu">Menu</a>
             <nav class="header__nav" role="menu">
                 <ul id="main-menu" class="nav__list" itemprop="breadcrumb">
                     <li class="nav--item">
-                        <a href="#" class="nav--link" aria-label="Strona główna">Start</a>
+                        <a href="#" class="nav--link clicked" aria-label="Strona główna">Start</a>
                     </li>
                     <li class="nav--item">
-                        <a href="#" class="nav--link" aria-label="Partnerzy">Organizatorzy</a>
+                        <a href="#about" class="nav--link clicked" aria-label="Partnerzy">Organizatorzy</a>
                     </li>
                     <li class="nav--item">
-                        <a href="#" class="nav--link" aria-label="Partnerzy">Partnerzy</a>
+                        <a href="#partners" class="nav--link clicked" aria-label="Partnerzy">Partnerzy</a>
                     </li>
                     <li class="nav--item">
-                        <a href="#" class="nav--link" aria-label="O nas">O nas</a>
+                        <a href="#history" class="nav--link clicked" aria-label="O nas">O nas</a>
                     </li>
                     <li class="nav--item">
-                        <a href="#" class="nav--link" aria-label="Kontakt">Kontakt</a>
+                        <a href="#footer" class="nav--link clicked" aria-label="Kontakt">Kontakt</a>
                     </li>
                 </ul>
             </nav>
@@ -59,7 +60,12 @@
                         Autonomous & Robotized Life
                     </h2>
 
-                    <h3 class="section__title--role"> Wydarzenie, na którym dowiecie się jak może zmienić się świat w przyszłości. </h3>
+                    <h3 class="section__title--role"> Wydarzenie, na którym dowiecie się jak może zmienić się świat w
+                        przyszłości. <span class="intro-span">Kiedy?</span>
+                        Piątek, 26 października 2018 o 09:00.
+                        <span class="intro-span">Gdzie?</span> <a class="intro__place" target="_blank" href="https://www.google.pl/maps?q=Henryka+Jordana+18,+40-043+Katowice&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiA-7fu5IPeAhWB2ywKHRoZABYQ_AUIDigB">Wydział
+                            Teologiczny UŚ</a> </h3>
+
                     <a href="#" class="more__button" role="button">Dowiedz się więcej</a>
 
                 </header>
@@ -86,7 +92,7 @@
 
         </section>
 
-        <section class="section section__founders ">
+        <section class="section section__founders " id="founders">
 
             <div class="section__container">
                 <ul class="founders__list">
@@ -180,7 +186,7 @@
             <div class="section__container">
                 <div class="sponsors__container">
                     <ul class="sponsors-list">
-                        <li class="sponsor--item">
+                        <li class="sponsor--item wide">
                             <figure class="sponsor-figure top">
                                 <img src="../dist/images/partners/cogito.png" class="sponsor-image" alt="">
                             </figure>
@@ -200,6 +206,73 @@
                 </div>
             </div>
 
+        </section>
+
+        </section>
+
+        <section class="section section__speaker" id="speaker">
+            <div class="section__container">
+
+                <div class="speaker__container">
+                    <article class="speaker--item">
+                        <figure class="speaker__figure">
+                            <img src="../dist/images/speakers/s1.jpg" alt="">
+                        </figure>
+                        <header class="speaker__header">
+                            <h3>Agnieszka Wiórek</h3>
+                        </header>
+                        
+                        <p>
+                            Przewodnicząca Zarządu Studenckiego Towarzystwa Naukowego Śląskiego
+                            Uniwersytetu Medycznego w Katowicach. Absolwentka Wydziału Lekarskiego z Oddziałem
+                            Lekarsko-Dentystycznym w Zabrzu. Obecnie lekarz stażysta oraz uczestniczka pierwszego roku
+                            studiów doktoranckich na Wydziale Lekarskim ŚUM w Katowicach.
+
+                            Organizatorka Konferencji "International Medical Congress of Silesia"- największej
+                            studenckiej konferencji naukowej w Polsce. Jej główne zainteresowania i działalność naukowa
+                            związane są z dziedziną medycyny jaką jest anestezjologia i intensywna terapia.
+
+                            Jej hobby jest jazda konna, wolny czas uwielbia spędzać na przejażdżkach i treningach.
+                        </p>
+                    </article>
+                    <article class="speaker--item">
+                        <figure class="speaker__figure">
+                            <img src="../dist/images/speakers/s2.jpg" alt="">
+                        </figure>
+                        <header class="speaker__header">
+                            <h3>Zbigniew Nawrat</h3>
+                        </header>
+                        <p>
+                               Z zawodu fizyk teoretyk, Jego cała działalność zawodowa jest związana z medycyną. Autor pionierskich badań w dziedzinie sztucznych narządów (polskie urządzenie wspomagające komorę serca POLVAD) i robotyki medycznej (Robin Heart). Jest także pionierem zastosowania symulacji komputerowej i technologii przestrzeni wirtualnej do planowania chirurgicznego.
+
+                            Zbigniew Nawrat pracuje w Śląskim Uniwersytecie Medycznym oraz w Fundacji Rozwoju Kardiochirurgii jako dyrektor Instytutu Protezy Serca. W 2010 r. Założył Międzynarodowe Towarzystwo Robotyki Medycznej, którego jest prezesem. Stworzył i opublikował czasopismo Medical Robotics Reports. Hobby: Poeta, kompozytor, muzyk.
+                        </p>
+                    </article>
+                    <article class="speaker--item">
+                        <figure class="speaker__figure">
+                            <img src="../dist/images/speakers/s3.jpg" alt="">
+                        </figure>
+                        <div class="speaker__column">
+                                <header class="speaker__header">
+                                        <h3>Darek Werschner</h3>
+                                    </header>
+                                  
+                                    <p>
+                                            Fizyk. Wizjoner. Innowator.
+                                            Entuzjasta nowych technologii.
+                                            Założyciel kilku startupów. Krzewiciel technologii dronowych.
+                                            Pomysłodawca AIRVEIN - pierwszego systemu autonomicznego transportu dronami dla miast.
+                                            Pomysłodawca i współzałożyciel Polskiej Izby Systemów Bezzałogowych. Obecnie jej prezes.
+                                            Pomysłodawca budowy miast Drone Ready.
+                                            Moderator polskiej branży dronowej.
+                                            Prywatnie mąż i tata - współgłowa wspaniałej rodziny.
+                                    </p>
+                        </div>
+                        
+                    </article>
+                </div>
+
+            </div>
         </section>
 
         <section class="section section__history" id="history">
@@ -235,11 +308,9 @@
 
             </div>
 
-        </section>
-        <section class="section section__contact" id="contact"></section>
-        <div class="plus-button"></div>
+            <!--<div class="plus-button"></div>
         <div class="social-button facebook-button"></div>
-        <div class="social-button insta-button"></div>
+        <div class="social-button insta-button"></div>-->
     </main>
 
     <footer class="footer" id="footer" role="contentinfo">
@@ -252,33 +323,36 @@
                             <a href="#" class="nav__footer--link" aria-label="Strona główna">Start</a>
                         </li>
                         <li class="nav__footer-item">
-                            <a href="#" class="nav__footer--link" aria-label="Partnerzy">Organizatorzy</a>
+                            <a href="#founders" class="nav__footer--link" aria-label="Partnerzy">Organizatorzy</a>
                         </li>
                         <li class="nav__footer-item">
-                            <a href="#" class="nav__footer--link" aria-label="Partnerzy">Partnerzy</a>
+                            <a href="#partners" class="nav__footer--link" aria-label="Partnerzy">Partnerzy</a>
                         </li>
                         <li class="nav__footer-item">
-                            <a href="#" class="nav__footer--link" aria-label="O nas">O nas</a>
+                            <a href="#history" class="nav__footer--link" aria-label="O nas">O nas</a>
                         </li>
                         <li class="nav__footer-item">
-                            <a href="#" class="nav__footer--link" aria-label="Kontakt">Kontakt</a>
+                            <a href="#footer" class="nav__footer--link" aria-label="Kontakt">Kontakt</a>
                         </li>
                     </ul>
                 </nav>
                 <ul class="footer__menu-media">
                     <li class="nav__media-item">
-                        <a href="https://www.facebook.com/AutoRoboLife/" class="nav__social-item">
+                        <a target="_blank" href="https://www.facebook.com/AutoRoboLife/" class="nav__social-item">
                             <span class="fab fa-facebook-f"></span>
                         </a>
                     </li>
-                    <li class="nav__media-item">
-                        <a href="https://www.instagram.com/autorobolife/" class="nav__social-item">
+                    <li class="nav__media-item instagram">
+                        <a target="_blank" href="https://www.instagram.com/autorobolife/" class="nav__social-item">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </li>
                 </ul>
                 <p class="footer__copy">&copy;2018</p>
-                <div>Icons made by <a href="https://www.flaticon.com/authors/mavadee" title="mavadee">mavadee</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                <div class="footer__credit">Icons made by <a class="link__author" href="https://www.flaticon.com/authors/mavadee"
+                        title="mavadee">mavadee</a> from <a class="link__author" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                    is licensed by <a class="link__author" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                        target="_blank">CC 3.0 BY</a></div>
                 <p class="footer__author">Made with <span class="fas fa-heart"></span> by Piotr Michalski</p>
             </div>
         </div>
