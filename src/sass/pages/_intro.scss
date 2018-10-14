@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 90vh;
+    //height: 900px;
     //width: 100%;
     background-color: #F8F9FA;
     //margin-top: 10px;
@@ -53,8 +53,9 @@
 
 }
 @media(max-width: 548px) {
-    .section__intro {
-        height: 90vh;
+    .title__container{
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 @media(max-width: 560px) {

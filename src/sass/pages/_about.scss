@@ -1,6 +1,6 @@
 .section__about {
     width: 100%;
-    height: 70vh;
+    //height: 700px;
     //margin-bottom: 300px;
     //margin-top: 30px;
 }
@@ -26,6 +26,7 @@
     //position: absolute;
     //top: 20%;
     //left: 35%;
+    padding-bottom: 200px;
     width: 600px;
     display: flex;
     justify-content: center;
@@ -49,6 +50,7 @@
 
 @media(max-width: 660px) {
     .about__introduction--center {
+        padding-bottom: 150px;
         p{
             font-size: 18px;
             padding: 0 20px;
@@ -57,6 +59,7 @@
 }
 @media(max-width: 570px) {
     .about__introduction--center {
+        padding-bottom: 130px;
         .about__title--bold{
             font-size: 35px;
         }
@@ -64,6 +67,7 @@
 }
 @media(max-width: 470px) {
     .about__introduction--center {
+        padding-bottom: 110px;
         p{
             font-size: 16px;
             padding: 0 20px;

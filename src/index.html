@@ -10,11 +10,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="www.example.pl">
     <title>Autonomous & Robotized Life 2018</title>
-
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="stylesheet" href="../dist/css/style.css">
+    <script async src="js/scrollmenu.min.js"></script>
 </head>
 
 <body>
@@ -31,19 +34,22 @@
             <nav class="header__nav" role="menu">
                 <ul id="main-menu" class="nav__list" itemprop="breadcrumb">
                     <li class="nav--item">
-                        <a href="#" class="nav--link clicked" aria-label="Strona główna">Start</a>
+                        <a data-scroll href="#" class="nav--link clicked scroll" aria-label="Strona główna">Start</a>
                     </li>
                     <li class="nav--item">
-                        <a href="#about" class="nav--link clicked" aria-label="Partnerzy">Organizatorzy</a>
+                        <a data-scroll href="#about" class="nav--link clicked scroll" aria-label="Partnerzy">Organizatorzy</a>
                     </li>
                     <li class="nav--item">
-                        <a href="#partners" class="nav--link clicked" aria-label="Partnerzy">Partnerzy</a>
+                        <a data-scroll href="#partners" class="nav--link clicked scroll" aria-label="Partnerzy">Partnerzy</a>
                     </li>
                     <li class="nav--item">
-                        <a href="#history" class="nav--link clicked" aria-label="O nas">O nas</a>
+                        <a data-scroll href="#speaker" class="nav--link clicked scroll" aria-label="Partnerzy">Prelegenci</a>
                     </li>
                     <li class="nav--item">
-                        <a href="#footer" class="nav--link clicked" aria-label="Kontakt">Kontakt</a>
+                        <a data-scroll href="#history" class="nav--link clicked scroll" aria-label="O nas">O nas</a>
+                    </li>
+                    <li class="nav--item">
+                        <a data-scroll href="#footer" class="nav--link clicked scroll" aria-label="Kontakt">Kontakt</a>
                     </li>
                 </ul>
             </nav>
@@ -52,7 +58,7 @@
 
     <main id="main" class="content" role="main">
 
-        <section class="section section__intro" id="intro">
+        <section class="section section__intro animated fadeIn" id="intro">
 
             <div class="section__container">
                 <header class="title__container">
@@ -66,12 +72,12 @@
                         <span class="intro-span">Gdzie?</span> <a class="intro__place" target="_blank" href="https://www.google.pl/maps?q=Henryka+Jordana+18,+40-043+Katowice&um=1&ie=UTF-8&sa=X&ved=0ahUKEwiA-7fu5IPeAhWB2ywKHRoZABYQ_AUIDigB">Wydział
                             Teologiczny UŚ</a> </h3>
 
-                    <a href="#" class="more__button" role="button">Dowiedz się więcej</a>
+                    <a  data-scroll href="#history" class="more__button animated scroll" role="button">Dowiedz się więcej</a>
 
                 </header>
-                <div class="arrow bounce">
-                    <a class="fa fa-arrow-down fa-2x" href="#"></a>
-                </div>
+                <!--<div class="arrow bounce">
+                    <a data-scroll class="fa fa-arrow-down fa-2x scroll" href="#about"></a>
+                </div>-->
             </div>
 
         </section>
@@ -146,7 +152,6 @@
                                     <span class="far fa-lightbulb"></span>
                                     <h3>Paulina Kliś</h3>
                                 </header>
-                                <!--<img class="rocket" src="../dist/images/startup.svg" alt="">-->
                                 <p>
                                     Organizatorka pierwszej i drugiej edycji konferencji, uczennica III Liceum
                                     Ogólnokształcącego im. Adama Mickiewicza w Katowicach. Interesuje się muzyką,
@@ -197,6 +202,11 @@
                             </figure>
                         </li>
                         <li class="sponsor--item">
+                                <figure class="sponsor-figure margin">
+                                    <img src="../dist/images/partners/pk.jpg" class="sponsor-image" alt="">
+                                </figure>
+                            </li>
+                        <li class="sponsor--item">
                             <figure class="sponsor-figure top margin">
                                 <img src="../dist/images/partners/wyborcza.jpg" class="sponsor-image" alt="">
                             </figure>
@@ -214,6 +224,11 @@
             <div class="section__container">
 
                 <div class="speaker__container">
+                    <header class="speakers__header">
+                        <h3>
+                            Prelegenci
+                        </h3>
+                    </header>
                     <article class="speaker--item">
                         <figure class="speaker__figure">
                             <img src="../dist/images/speakers/s1.jpg" alt="">
@@ -290,7 +305,9 @@
                     <figure class="history__figure">
                         <img class="history__img" src="../dist/images/founders/team.jpg" alt="">
                     </figure>
-                    <p class="history_description">
+                    <!--<img class="rocket" src="../dist/images/startup.svg" alt="">-->
+
+                    <p class="history__description">
 
                         Jaki jest nasz cel?
                         Chcieliśmy pokazać młodym ludziom, takim jak my, jak ważne jest bycie świadomym i krytyczne
@@ -301,7 +318,7 @@
                         globalne oraz lokalne dotykające osób z każdej grupy społecznej związane z tematyką naszego
                         projektu.
 
-                        Konferencja odbędzie się <span class="bold-span">24 października 2018 roku, na Wydziale
+                        Konferencja odbędzie się <span class="bold-span">26 października 2018 roku od godz. 09:00, na Wydziale
                             Teologicznym Uniwersytetu Śląskiego w
                             Katowicach.</span> Zaprosimy wielu ciekawych prelegentów. Będzie wiele atrakcji, które
                         zainteresują
@@ -324,19 +341,22 @@
                 <nav class="footer__nav">
                     <ul class="footer__menu">
                         <li class="nav__footer-item">
-                            <a href="#" class="nav__footer--link" aria-label="Strona główna">Start</a>
+                            <a data-scroll href="#" class="nav__footer--link scroll" aria-label="Strona główna">Start</a>
                         </li>
                         <li class="nav__footer-item">
-                            <a href="#founders" class="nav__footer--link" aria-label="Partnerzy">Organizatorzy</a>
+                            <a data-scroll href="#founders" class="nav__footer--link scroll" aria-label="Partnerzy">Organizatorzy</a>
                         </li>
                         <li class="nav__footer-item">
-                            <a href="#partners" class="nav__footer--link" aria-label="Partnerzy">Partnerzy</a>
+                            <a data-scroll href="#partners" class="nav__footer--link scroll" aria-label="Partnerzy">Partnerzy</a>
                         </li>
                         <li class="nav__footer-item">
-                            <a href="#history" class="nav__footer--link" aria-label="O nas">O nas</a>
+                            <a data-scroll href="#speaker" class="nav__footer--link scroll" aria-label="O nas">Prelegenci</a>
                         </li>
                         <li class="nav__footer-item">
-                            <a href="#footer" class="nav__footer--link" aria-label="Kontakt">Kontakt</a>
+                            <a data-scroll href="#history" class="nav__footer--link scroll" aria-label="O nas">O nas</a>
+                        </li>
+                        <li class="nav__footer-item">
+                            <a data-scroll href="#footer" class="nav__footer--link scroll" aria-label="Kontakt">Kontakt</a>
                         </li>
                     </ul>
                 </nav>

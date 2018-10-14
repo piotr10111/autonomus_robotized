@@ -78,13 +78,17 @@
     border-radius: 5px;
     max-width: 200px;
     text-align: center;
+
+    &:hover {
+      animation: 1s shake;
+    }
 }
 
 // Arrow
 .arrow {
-    z-index: 90;
+    z-index: 200;
     position: absolute;
-    top:95%;
+    bottom:10%;
     left: 50%;
 
    
@@ -121,4 +125,3 @@
     }
   }
 
-  // Social media button
