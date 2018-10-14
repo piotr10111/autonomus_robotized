@@ -16,4 +16,14 @@ box-shadow: 0px 4px 14px -4px rgba(0,0,0,0.75);
 .header__nav {
     margin-left: auto;
 }
+@media (max-width: 1000px) {
+    .header__logo {
+        transform: scale(.8);
+        margin-top: -8px;
+    }
+    .header {
+        height: 80px;
+    }
+    
+}
 
