@@ -9,6 +9,7 @@
     <meta name=”robots” content=”index, follow”>
     <meta property="og:type" content="website">
     <meta property="og:url" content="www.example.pl">
+    <meta property="og:image"content="./dist/images/noname.png" />
     <title>Autonomous & Robotized Life 2018</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet"
@@ -22,7 +23,7 @@
 
 <body>
 
-    <header id="header" class="header" role="banner">
+    <header id="header" class="header" role="banner" itemscope itemtype="http://schema.org/Organization">
         <div class="header__container">
             <h1 class="header__title" rel="index">
                 <a href="" class="header__title__link" title="Strona główna">
@@ -31,7 +32,7 @@
             </h1>
             <a class="header__button" aria-label="menu" aria-expanded="false" aria-controls="main-menu" tabindex="1"
                 role="button" type="button" name="menu">Menu</a>
-            <nav class="header__nav" role="menu">
+            <nav class="header__nav" role="menu" itemscope itemtype="https://schema.org/WebPage">
                 <ul id="main-menu" class="nav__list" itemprop="breadcrumb">
                     <li class="nav--item">
                         <a data-scroll href="#" class="nav--link clicked scroll" aria-label="Strona główna">Start</a>
@@ -356,12 +357,12 @@
         <div class="social-button insta-button"></div>-->
     </main>
 
-    <footer class="footer" id="footer" role="contentinfo">
+    <footer class="footer" id="footer" role="contentinfo" itemscope itemtype="https://schema.org/Person">
 
         <div class="footer__container">
             <div class="footer__center">
                 <nav class="footer__nav">
-                    <ul class="footer__menu">
+                    <ul class="footer__menu" itemscope itemtype="http://schema.org/Organization">
                         <li class="nav__footer-item">
                             <a data-scroll href="#" class="nav__footer--link scroll" aria-label="Strona główna">Start</a>
                         </li>
