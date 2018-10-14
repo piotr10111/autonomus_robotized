@@ -8,7 +8,7 @@
     button.addEventListener('click', function (event) {
         event ? event : event = window.event;
         event.preventDefault();
-        this.classList.toggle('header__button--close');
+        button.classList.toggle('header__button--close');
         console.log('close')
         
     });
@@ -17,7 +17,7 @@
     if (window.innerWidth <= 1000) {
         const hide = function() {
             ul.classList.toggle('nav__list--block');
-            button.classList.toggle('header__button--close');
+            //button.classList.toggle('header__button--close');
         };
         
         const links = Array.from(document.querySelectorAll('.clicked'));
