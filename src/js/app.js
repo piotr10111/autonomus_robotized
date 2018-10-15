@@ -15,9 +15,11 @@
 
 
     if (window.innerWidth <= 1000) {
-        const hide = function() {
-            ul.classList.toggle('nav__list--block');
-            //button.classList.toggle('header__button--close');
+
+        function hide() {
+            ul.classList.remove('nav__list--block');
+            console.log('xd');
+            button.classList.remove('header__button--close');
         };
         
         const links = Array.from(document.querySelectorAll('.clicked'));
