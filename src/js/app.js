@@ -5,12 +5,12 @@
     // Hamburger menu
     const button = document.querySelector('.header__button');
     const ul = document.querySelector('.nav__list');
+
     button.addEventListener('click', function (event) {
         event ? event : event = window.event;
         event.preventDefault();
         button.classList.toggle('header__button--close');
-        console.log('close')
-        
+        ul.classList.toggle('nav__list--block');
     });
 
 

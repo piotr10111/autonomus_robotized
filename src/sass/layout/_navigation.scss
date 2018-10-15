@@ -37,7 +37,11 @@
         top: 0;
         bottom: 0;
     }
-
+    .nav__list .nav--item .nav--link {
+        &:hover {
+            transition: none;
+        }
+    }
     .nav--item {
         margin-top: 60px;
         padding: 0;
