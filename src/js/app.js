@@ -18,7 +18,6 @@
 
         function hide() {
             ul.classList.remove('nav__list--block');
-            console.log('xd');
             button.classList.remove('header__button--close');
         };
         
