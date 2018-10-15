@@ -39,6 +39,6 @@ gulp.task('image', () =>
         .pipe(gulp.dest(dist+'/images'))
 );
 
-gulp.task('default', [ 'sass:watch','sass','html', 'image'])
+gulp.task('default', [ 'sass:watch','sass','html'])
 
 
