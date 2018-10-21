@@ -10,6 +10,7 @@
     border-top: 3px solid #000;
     background: transparent;
     margin-right: 20px;
+    outline: 0;
     z-index: 200;
     font-size: 0;
     cursor: pointer;
@@ -32,7 +33,7 @@
   .header__button--close {
     display: block;
   z-index: 200;
-  width: 40px;
+  width: 35px;
   height: 25px;
   border: 0;
   background: transparent;
@@ -40,13 +41,14 @@
   top: 50px;
   right: 0px;
   margin-right: 17px;
-  padding: 0;
+  padding: 0px;
   &::before,
   &::after {
       content: '';
       position: absolute;
       top: 0;
       left: 0;
+      padding: 0;
       width: 100%;
       border-top: 3px solid #000;
       -webkit-transform: rotate(45deg) translateY(5px);
